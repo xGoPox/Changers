@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CHAAwardView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwn-UG-HWX">
+                    <rect key="frame" x="0.0" y="30" width="320" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.29411764705882354" green="0.78823529411764703" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="ce7-ok-DWz"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONGRATULATIONS, YOU'VE JUST EARNED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rA-xn-MZA">
+                    <rect key="frame" x="20" y="57" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2DQ-3D-hWj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROCKIE NEWBIE AWARD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvw-Zq-jPc">
+                    <rect key="frame" x="20" y="78" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jvh-EJ-b0S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suc_bage" translatesAutoresizingMaskIntoConstraints="NO" id="CFX-Rg-HxB">
+                    <rect key="frame" x="135" y="4" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="DIg-Tf-hW9"/>
+                        <constraint firstAttribute="height" constant="50" id="g10-JS-ric"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Bvw-Zq-jPc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="QxB-y2-zbW"/>
+                <constraint firstAttribute="bottom" secondItem="Rwn-UG-HWX" secondAttribute="bottom" id="VfQ-3N-ElU"/>
+                <constraint firstAttribute="trailing" secondItem="Bvw-Zq-jPc" secondAttribute="trailing" constant="20" id="WXV-pO-MSa"/>
+                <constraint firstAttribute="bottom" secondItem="Bvw-Zq-jPc" secondAttribute="bottom" constant="11" id="WgS-OC-JRg"/>
+                <constraint firstAttribute="centerX" secondItem="CFX-Rg-HxB" secondAttribute="centerX" id="Wx7-D2-uLl"/>
+                <constraint firstAttribute="trailing" secondItem="7rA-xn-MZA" secondAttribute="trailing" constant="20" id="aEo-tG-eoA"/>
+                <constraint firstItem="Rwn-UG-HWX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bwc-xg-3fx"/>
+                <constraint firstItem="Bvw-Zq-jPc" firstAttribute="top" secondItem="7rA-xn-MZA" secondAttribute="bottom" id="izo-F6-1a1"/>
+                <constraint firstAttribute="trailing" secondItem="Rwn-UG-HWX" secondAttribute="trailing" id="pgE-Y6-hHj"/>
+                <constraint firstItem="7rA-xn-MZA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="t91-Ny-wzM"/>
+                <constraint firstItem="7rA-xn-MZA" firstAttribute="top" secondItem="CFX-Rg-HxB" secondAttribute="bottom" constant="3" id="uoD-H8-Fmk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="suc_bage" width="53" height="53"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string></string>
+		<key>subtitle</key>
+		<string>When you select a mode of transport, your CO2 Footprint is calculated in kilograms based on the CO2 emissions you save compared to travelling by car. Your CO2 Footprint is calculated based on data provided by Umwelt Bundesamt.</string>
+		<key>title</key>
+		<string>It&apos;s that easy to save CO2.</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>cycle_icon_normal</string>
+		<key>subtitle</key>
+		<string>CO2 savings of 142 g/km, compared to travelling by car. Every kilometer driven earns you at least 1 Recoin.</string>
+		<key>title</key>
+		<string>BIKE</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>public_icon_normal</string>
+		<key>subtitle</key>
+		<string>CO2 emission 77 g/km, CO2 savings of 65 g/km, compared to travelling by car. The difference of 12 g CO2 emission per kilometer driven is added to your account balance. Every 5 kilometers earns you at least 1 Recoin.</string>
+		<key>title</key>
+		<string>PUBLIC TRANSPORT</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>train_icon_normal</string>
+		<key>subtitle</key>
+		<string>CO2 emission 45 g/km, CO2 savings of 97 g/km, compared to travelling by car. The difference of 52 g CO2 savings per kilometer driven is added to your account balance. Every 20 kilometers earns you at least 1 Recoin.</string>
+		<key>title</key>
+		<string>LONG DISTANCE TRAIN</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>car_icon_normal</string>
+		<key>subtitle</key>
+		<string>CO2 emission 142 g/km You cannot earn Recoins by car, as it is a CO2 intensive mode of transport.</string>
+		<key>title</key>
+		<string>CAR</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>plane_icon_normal</string>
+		<key>subtitle</key>
+		<string>CO2 emission 230 g/kmYou cannot earn Recoins by plane, as it is a CO2 intensive mode of transport.</string>
+		<key>title</key>
+		<string>PLANE</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>sun_icn</string>
+		<key>subtitle</key>
+		<string>Recoins are based on a watt-hour of renewable energy. You can collect self-generated Recoins with our solar charger. The worldwide average savings for every watt-hour as specified by the International Energy Agency (IEA) is 0.5 g CO2. https://shop.changers.com</string>
+		<key>title</key>
+		<string>SOLARE ENERGIE</string>
+	</dict>
+</array>
+</plist>

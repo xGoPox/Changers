@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G0h-j2-ZaF">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Compensation View Controller-->
+        <scene sceneID="Ala-21-CGz">
+            <objects>
+                <viewController storyboardIdentifier="compensation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G0h-j2-ZaF" customClass="CHACompensationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h50-4Q-05W"/>
+                        <viewControllerLayoutGuide type="bottom" id="zr7-cb-76X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ni6-Oi-3X4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Rainbow01" translatesAutoresizingMaskIntoConstraints="NO" id="0Ti-EC-gq1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compensation_circle" translatesAutoresizingMaskIntoConstraints="NO" id="O8y-Ut-nr0">
+                                <rect key="frame" x="0.0" y="76" width="320" height="313"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="313" id="akN-NS-YzA"/>
+                                    <constraint firstAttribute="width" constant="320" id="dLu-kG-LOZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y98-aP-tXg">
+                                <rect key="frame" x="34" y="409" width="118" height="50"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.83137254901960778" blue="0.12941176470588234" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SH1-MF-VZn"/>
+                                    <constraint firstAttribute="width" constant="118" id="x2Y-T0-D0W"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buyRecoinsHandle:" destination="G0h-j2-ZaF" eventType="touchDown" id="kDx-yd-hpp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lighten up your conscience and neutralize your car journey," textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovf-NM-ZA7">
+                                <rect key="frame" x="51" y="214" width="226" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="2PS-n8-Kps"/>
+                                    <constraint firstAttribute="height" constant="46" id="Uho-kP-Wl7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Light"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aet-dW-VBK">
+                                <rect key="frame" x="94" y="268" width="133" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="eXK-uL-KLl"/>
+                                    <constraint firstAttribute="height" constant="21" id="yIx-ZP-4nc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.83137254900000002" blue="0.12941176469999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="compensation_car" translatesAutoresizingMaskIntoConstraints="NO" id="6my-KC-fz0">
+                                <rect key="frame" x="80" y="89" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="5xh-Yv-Zj4"/>
+                                    <constraint firstAttribute="height" constant="60" id="QHo-0h-hdN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can pay your compensation with Recoins or Euro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5w0-Om-5kF">
+                                <rect key="frame" x="36" y="292" width="249" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="00l-be-jYk"/>
+                                    <constraint firstAttribute="width" constant="249" id="bAi-QZ-KG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Light"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET YOUR JOURNEY CO2-FREE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6K-V2-gG3">
+                                <rect key="frame" x="60" y="147" width="200" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Pyy-8t-wXy"/>
+                                    <constraint firstAttribute="height" constant="65" id="Qvk-fi-YsN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwq-aq-SCn">
+                                <rect key="frame" x="78" y="479" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="VTn-IF-xMG"/>
+                                    <constraint firstAttribute="height" constant="30" id="cu9-8S-Nwu"/>
+                                </constraints>
+                                <state key="normal" title="NOPE, NOT THIS TIME.">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTapHandler:" destination="G0h-j2-ZaF" eventType="touchDown" id="8cW-6w-N43"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-5P-AR7">
+                                <rect key="frame" x="167" y="409" width="118" height="50"/>
+                                <color key="backgroundColor" red="0.32549019607843138" green="0.76470588235294112" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="pPF-Yk-ER4"/>
+                                    <constraint firstAttribute="height" constant="50" id="tzi-62-AGT"/>
+                                </constraints>
+                                <state key="normal" title="Loading price">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buyInAppPurchaseHandle:" destination="G0h-j2-ZaF" eventType="touchDown" id="MfN-vp-3Bf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29803921568627451" green="0.34901960784313724" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zr7-cb-76X" firstAttribute="top" secondItem="0Ti-EC-gq1" secondAttribute="bottom" id="1q4-nM-Qma"/>
+                            <constraint firstItem="0Ti-EC-gq1" firstAttribute="leading" secondItem="Ni6-Oi-3X4" secondAttribute="leading" id="25C-o6-HS8"/>
+                            <constraint firstAttribute="centerX" secondItem="Y98-aP-tXg" secondAttribute="centerX" constant="67" id="DyV-dt-tBT"/>
+                            <constraint firstAttribute="centerY" secondItem="Ovf-NM-ZA7" secondAttribute="centerY" constant="47" id="LFD-kh-upp"/>
+                            <constraint firstAttribute="centerY" secondItem="e6K-V2-gG3" secondAttribute="centerY" constant="104.5" id="OKJ-Pr-t5q"/>
+                            <constraint firstAttribute="centerY" secondItem="5w0-Om-5kF" secondAttribute="centerY" constant="-33.5" id="OvJ-j9-qGe"/>
+                            <constraint firstAttribute="centerX" secondItem="e6K-V2-gG3" secondAttribute="centerX" id="Qo1-ca-Frf"/>
+                            <constraint firstAttribute="centerX" secondItem="Ovf-NM-ZA7" secondAttribute="centerX" constant="-4" id="SDe-f9-JXc"/>
+                            <constraint firstAttribute="centerX" secondItem="Wwq-aq-SCn" secondAttribute="centerX" id="UqB-4k-vFz"/>
+                            <constraint firstAttribute="centerX" secondItem="7Nx-5P-AR7" secondAttribute="centerX" constant="-66" id="VaK-bK-o57"/>
+                            <constraint firstAttribute="centerY" secondItem="7Nx-5P-AR7" secondAttribute="centerY" constant="-150" id="XHg-3V-upa"/>
+                            <constraint firstAttribute="centerY" secondItem="Y98-aP-tXg" secondAttribute="centerY" constant="-150" id="aAB-AA-gw9"/>
+                            <constraint firstAttribute="centerX" secondItem="O8y-Ut-nr0" secondAttribute="centerX" id="cmQ-cI-2V8"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ti-EC-gq1" secondAttribute="trailing" id="eEc-LA-QMD"/>
+                            <constraint firstAttribute="centerY" secondItem="6my-KC-fz0" secondAttribute="centerY" constant="165" id="hqv-XK-T8J"/>
+                            <constraint firstAttribute="centerY" secondItem="Wwq-aq-SCn" secondAttribute="centerY" constant="-210" id="ia4-1S-QVr"/>
+                            <constraint firstItem="0Ti-EC-gq1" firstAttribute="top" secondItem="Ni6-Oi-3X4" secondAttribute="top" id="rAy-hn-FDV"/>
+                            <constraint firstAttribute="centerX" secondItem="6my-KC-fz0" secondAttribute="centerX" constant="50" id="rC5-Aq-Qaw"/>
+                            <constraint firstAttribute="centerY" secondItem="aet-dW-VBK" secondAttribute="centerY" constant="5.5" id="tNU-LJ-ojF"/>
+                            <constraint firstAttribute="centerX" secondItem="aet-dW-VBK" secondAttribute="centerX" id="xDv-1T-3iY"/>
+                            <constraint firstAttribute="centerY" secondItem="O8y-Ut-nr0" secondAttribute="centerY" constant="51.5" id="xru-uM-yhQ"/>
+                            <constraint firstAttribute="centerX" secondItem="5w0-Om-5kF" secondAttribute="centerX" id="ypi-5H-zAX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2GD-9x-0nt"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="co2ToCompenseLabel" destination="aet-dW-VBK" id="YTm-ew-HPV"/>
+                        <outlet property="compensationBuyButton" destination="7Nx-5P-AR7" id="grB-O5-TN8"/>
+                        <outlet property="compensationRCButton" destination="Y98-aP-tXg" id="NIa-Rr-RYj"/>
+                        <outlet property="journeyTypeImage" destination="6my-KC-fz0" id="4jb-0A-VgE"/>
+                        <outlet property="skipButton" destination="Wwq-aq-SCn" id="p9S-Mf-PkJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEr-db-Zha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="422"/>
+        </scene>
+        <!--Compensation Approval View Controller-->
+        <scene sceneID="Ych-85-4dM">
+            <objects>
+                <viewController storyboardIdentifier="CHACompensationApprovalViewController" id="Kc6-vv-zjJ" customClass="CHACompensationApprovalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5pl-9b-9Ic"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zmk-rU-lES"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="odB-TB-uAa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compensation_circle" translatesAutoresizingMaskIntoConstraints="NO" id="NX7-8t-vcS">
+                                <rect key="frame" x="15" y="76" width="290" height="313"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="EeA-GO-5yS"/>
+                                    <constraint firstAttribute="height" constant="313" id="Ib4-Wy-5qQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COOL, YOU ARE ABOUT TO PAY 200 RECOINS FOR 15KG CO2 SAVING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBW-9Y-3oA">
+                                <rect key="frame" x="35" y="154" width="250" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="UJg-HE-ySk"/>
+                                    <constraint firstAttribute="height" constant="110" id="r4P-Ag-BDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit the &quot;yes&quot; button and become the sun of the world." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQV-42-fzw">
+                                <rect key="frame" x="53" y="246" width="215" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="0wN-1i-XXa"/>
+                                    <constraint firstAttribute="width" constant="215" id="TcV-Ii-ZjM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Light"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 RC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Oxp-vW-QxG">
+                                <rect key="frame" x="81" y="90" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.76470588240000004" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="PkV-Um-fkI"/>
+                                    <constraint firstAttribute="height" constant="60" id="gYr-kj-cgr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Light"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjQ-Jv-1G7">
+                                <rect key="frame" x="25" y="384" width="270" height="50"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.76470588240000004" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6ps-6E-L01"/>
+                                    <constraint firstAttribute="width" constant="270" id="Um9-s3-lIF"/>
+                                </constraints>
+                                <state key="normal" title="YES">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makePayment:" destination="Kc6-vv-zjJ" eventType="touchDown" id="9x1-iu-Rbj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssZ-si-Ri7">
+                                <rect key="frame" x="25" y="459" width="270" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="NZ3-AV-hh9"/>
+                                    <constraint firstAttribute="height" constant="50" id="xey-vq-uNE"/>
+                                    <constraint firstAttribute="width" secondItem="ssZ-si-Ri7" secondAttribute="height" multiplier="27:5" id="yey-q8-VIi"/>
+                                </constraints>
+                                <state key="normal" title="CANCEL">
+                                    <color key="titleColor" red="0.60784313729999995" green="0.83137254900000002" blue="0.12941176469999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTapHandler:" destination="Kc6-vv-zjJ" eventType="touchDown" id="VUH-vz-m7R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60784313729999995" green="0.83137254900000002" blue="0.12941176469999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="LBW-9Y-3oA" secondAttribute="centerY" constant="75" id="2U7-Hf-tla"/>
+                            <constraint firstAttribute="centerY" secondItem="NX7-8t-vcS" secondAttribute="centerY" constant="51.5" id="6kw-kw-UQD"/>
+                            <constraint firstAttribute="centerX" secondItem="WjQ-Jv-1G7" secondAttribute="centerX" id="6va-25-qb2"/>
+                            <constraint firstAttribute="centerX" secondItem="LBW-9Y-3oA" secondAttribute="centerX" id="8Hf-Rz-lOq"/>
+                            <constraint firstAttribute="centerY" secondItem="Oxp-vW-QxG" secondAttribute="centerY" constant="164" id="9lB-fw-k4n"/>
+                            <constraint firstAttribute="centerX" secondItem="WQV-42-fzw" secondAttribute="centerX" id="9qi-oL-k0l"/>
+                            <constraint firstAttribute="centerY" secondItem="ssZ-si-Ri7" secondAttribute="centerY" constant="-200" id="F5a-SL-NDJ"/>
+                            <constraint firstItem="Zmk-rU-lES" firstAttribute="top" secondItem="ssZ-si-Ri7" secondAttribute="bottom" priority="750" constant="15" id="Pbo-Xf-AWo"/>
+                            <constraint firstAttribute="centerX" secondItem="NX7-8t-vcS" secondAttribute="centerX" id="XrM-zI-kHi"/>
+                            <constraint firstAttribute="centerY" secondItem="WjQ-Jv-1G7" secondAttribute="centerY" constant="-125" id="aRW-K9-Z05"/>
+                            <constraint firstAttribute="centerX" secondItem="Oxp-vW-QxG" secondAttribute="centerX" constant="49" id="jBB-N2-haK"/>
+                            <constraint firstAttribute="centerX" secondItem="ssZ-si-Ri7" secondAttribute="centerX" id="nri-BG-Xcg"/>
+                            <constraint firstAttribute="centerY" secondItem="WQV-42-fzw" secondAttribute="centerY" constant="-8" id="rx9-dU-1bx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pgD-OV-C3U"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mainTextLabel" destination="LBW-9Y-3oA" id="vfD-qi-bAp"/>
+                        <outlet property="recoinsLabel" destination="Oxp-vW-QxG" id="TGp-dC-oJ2"/>
+                        <segue destination="X2e-rX-LCF" kind="show" identifier="CompensationApproveSegue" id="5fc-Qt-68j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6LO-ny-tnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="440"/>
+        </scene>
+        <!--Compensation Congratulation View Controller-->
+        <scene sceneID="Atu-JN-SqM">
+            <objects>
+                <viewController storyboardIdentifier="CHACompensationCongratulationViewController" id="X2e-rX-LCF" customClass="CHACompensationCongratulationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SHv-ts-ElD"/>
+                        <viewControllerLayoutGuide type="bottom" id="idC-Fb-WsM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ii2-Ai-ia9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compensation_circle" translatesAutoresizingMaskIntoConstraints="NO" id="Jnf-LO-BjK">
+                                <rect key="frame" x="15" y="76" width="290" height="313"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="PHX-hR-mp1"/>
+                                    <constraint firstAttribute="height" constant="313" id="Wp9-YX-3Kl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COOL, YOU ARE ABOUT TO PAY 200 RECOINS FOR 15KG CO2 SAVING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlW-F5-r8s">
+                                <rect key="frame" x="36" y="156" width="250" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="QfI-Q1-mCx"/>
+                                    <constraint firstAttribute="width" constant="250" id="fdY-dr-Ti2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit the &quot;yes&quot; button and become the sun of the world." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GR-sb-0cK">
+                                <rect key="frame" x="54" y="260" width="215" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="fPo-IQ-hI0"/>
+                                    <constraint firstAttribute="height" constant="92" id="pWf-b3-OlN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Light"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="compensation_sun" translatesAutoresizingMaskIntoConstraints="NO" id="9Uc-qg-0RU">
+                                <rect key="frame" x="81" y="90" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Mx4-Oo-dCm"/>
+                                    <constraint firstAttribute="height" constant="60" id="VZ5-bm-nby"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBk-tZ-RAf">
+                                <rect key="frame" x="25" y="421" width="270" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="XNE-u1-fws"/>
+                                    <constraint firstAttribute="height" constant="50" id="vbd-rL-EOG"/>
+                                </constraints>
+                                <state key="normal" title="CANCEL">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.85098039219999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="Klavika-Regular"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finishCompensation:" destination="X2e-rX-LCF" eventType="touchDown" id="kJu-dE-Vw8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.85098039215686272" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5GR-sb-0cK" secondAttribute="centerX" constant="-1.5" id="2eZ-UF-fzA"/>
+                            <constraint firstAttribute="centerX" secondItem="Jnf-LO-BjK" secondAttribute="centerX" id="5qE-Zc-xqq"/>
+                            <constraint firstAttribute="centerX" secondItem="OlW-F5-r8s" secondAttribute="centerX" constant="-1" id="Ddc-v4-hV6"/>
+                            <constraint firstAttribute="centerY" secondItem="OlW-F5-r8s" secondAttribute="centerY" constant="73" id="Hek-KO-Yn5"/>
+                            <constraint firstAttribute="centerY" secondItem="5GR-sb-0cK" secondAttribute="centerY" constant="-22" id="QIm-ZI-OQc"/>
+                            <constraint firstAttribute="centerY" secondItem="HBk-tZ-RAf" secondAttribute="centerY" constant="-162" id="RAu-xM-rzi"/>
+                            <constraint firstItem="idC-Fb-WsM" firstAttribute="top" secondItem="HBk-tZ-RAf" secondAttribute="bottom" constant="97" id="cnJ-lf-OCl"/>
+                            <constraint firstAttribute="centerY" secondItem="9Uc-qg-0RU" secondAttribute="centerY" constant="164" id="dEr-jp-YdD"/>
+                            <constraint firstAttribute="centerX" secondItem="9Uc-qg-0RU" secondAttribute="centerX" constant="49" id="igF-Wv-Yge"/>
+                            <constraint firstAttribute="centerX" secondItem="HBk-tZ-RAf" secondAttribute="centerX" id="rEW-bM-2jA"/>
+                            <constraint firstAttribute="centerY" secondItem="Jnf-LO-BjK" secondAttribute="centerY" constant="51.5" id="xPG-C1-xm3"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="congratulationLabel" destination="OlW-F5-r8s" id="f7U-gm-Sha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INq-mU-Mtb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rainbow01" width="640" height="1136"/>
+        <image name="compensation_car" width="121" height="120"/>
+        <image name="compensation_circle" width="580" height="625"/>
+        <image name="compensation_sun" width="65" height="26"/>
+    </resources>
+</document>
