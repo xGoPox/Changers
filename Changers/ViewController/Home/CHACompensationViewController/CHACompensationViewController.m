@@ -25,7 +25,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *skipButton;
 @property (nonatomic, weak) IBOutlet UIButton *compensationRCButton;
 @property (nonatomic, weak) IBOutlet UIButton *compensationBuyButton;
-
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *bottomConstraint;
 @end
 
 @implementation CHACompensationViewController
@@ -33,6 +33,10 @@
 @synthesize compensation = _compensation;
 
 - (void)viewDidLoad {
+    if (IS_IPHONE_4) {
+        [self.bottomConstraint setConstant:10.f];
+    [self.bottomConstraint setConstant:10.f];
+    }
     [super viewDidLoad];
     [self.navigationItem setHidesBackButton:YES];
     [self updateUI];
@@ -51,7 +55,6 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillDisappear:animated];
 }
 
@@ -108,6 +111,7 @@
 }
 
 - (IBAction)closeButtonTapHandler:(id)sender {
+    [self.navigationController setNavigationBarHidden:NO animated:FALSE];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

@@ -17,19 +17,24 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *recoinsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainTextLabel;
-
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *bottomConstraint_1;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *bottomConstraint_2;
 @end
 
 @implementation CHACompensationApprovalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (IS_IPHONE_4) {
+        [self.bottomConstraint_1 setConstant:10.f];
+        [self.bottomConstraint_2 setConstant:10.f];
+    }
+
     [self.navigationItem setHidesBackButton:YES];
     // Do any additional setup after loading the view.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES animated:animated];
     [self updateUIForCompensationType];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:@"IAPHelperProductPurchasedNotification" object:nil];
 
@@ -37,7 +42,6 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [super viewWillDisappear:animated];
 }
@@ -64,6 +68,7 @@
 }
 
 - (IBAction)closeButtonTapHandler:(id)sender {
+    [self.navigationController setNavigationBarHidden:NO animated:FALSE];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
